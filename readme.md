@@ -31,3 +31,10 @@ This is where source files reside. Files inside this directory are processed to 
 
 ___package.json___
 This file defines dependencies, scripts, and other properties.
+
+# React Router DOM
+
+```
+cd my-app
+npm i react-router-dom
+```
