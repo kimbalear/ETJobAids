@@ -1,0 +1,229 @@
+.qs_cat1 {
+    padding: 8px;
+    text-transform: uppercase;
+    line-height: 20px;
+    min-height: 32px;
+    grid-area: grd_left;
+}
+
+.table {
+    details {
+        width: 100%;
+
+        summary {
+            padding: 8px;
+            background-color: #383D47;
+            color: #F3F3F3;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-top: 0px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            text-align: justify;
+
+            li {
+                font-size: .9em;
+                padding: 8px;
+                background-color: #f3f3f3;
+                color: #383d47;
+                width: 100%;
+                margin: 0px !important;
+                text-align: justify;
+            }
+        }
+
+        .comment {
+            width: 100%;
+            padding: 5px;
+            background-color: #fff;
+            height: auto;
+            border: 2px solid #000;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+
+    details {
+        width: 100%;
+
+        summary {
+            cursor: pointer;
+        }
+
+        .fos_type {
+            @include cont_qs1;
+        }
+
+        .fos_assess {
+            @include cont_qs3;
+        }
+
+        .fos_ra {
+            @include cont_qs4;
+
+            span {
+                margin-left: 12px;
+                padding: 2px 8px;
+                border: 2px solid $cc9;
+                border-radius: 4px;
+                text-transform: capitalize;
+            }
+        }
+
+        .fos_ra_msg {
+            @include cont_qs5;
+        }
+
+        .partner_type {
+            @include cont_qs2;
+            span {
+                margin-left: 12px;
+                padding: 2px 8px;
+                border: 2px solid $cc9;
+                border-radius: 4px;
+                text-transform: capitalize;
+            }
+        }
+
+        .between {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5vw 10px 5vw;
+
+            .msg_decision {
+                clear: both;
+            }
+        }
+
+        >details {
+            margin: 5px 0;
+            @include tree-view-lines(36px);
+
+            .fos_type {
+                @include cont_qs1;
+            }
+
+            >details {
+                margin: 5px 0;
+                @include tree-view-lines(28px);
+
+                .fos_type {
+                    @include cont_details;
+                }
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                font-size: 0.9em;
+                @include cont_details;
+                @include tree-view-lines(28px);
+            }
+        }
+
+        .fos_recomended {
+            font-size: 0.9em;
+            margin: 0;
+        }
+    }
+}
+
+// radio items
+.radio-item1 {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px;
+    margin: 10px 0 0;
+    font-size: 0.9em;
+
+    input[type='radio'] {
+        display: none;
+        cursor: pointer;
+    }
+
+    label {
+        color: $cc9;
+        font-weight: normal;
+        cursor: pointer;
+
+        &:before {
+            content: " ";
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            margin: 0 5px 0 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 12px;
+            border: 2px solid $cc9;
+            background-color: transparent;
+        }
+    }
+
+    input[type=radio]:checked+label:after {
+        border-radius: 11px;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 11px;
+        left: 12px;
+        content: " ";
+        display: block;
+        background: $cc9;
+    }
+}
+
+.radio-item2 {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px 10px 6px;
+    font-size: 0.9em;
+
+    input[type='radio'] {
+        display: none;
+        cursor: pointer;
+    }
+
+    label {
+        color: $cc0;
+        font-weight: normal;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:before {
+            content: " ";
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            margin: 0 5px 0 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 12px;
+            border: 2px solid $cc0;
+            background-color: transparent;
+        }
+    }
+
+    input[type=radio]:checked+label:after {
+        border-radius: 11px;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 11px;
+        left: 12px;
+        content: " ";
+        display: block;
+        background: $cc0;
+    }
+}

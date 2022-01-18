@@ -1,0 +1,118 @@
+@mixin tree-view-lines($elem-height) {
+    margin-left: 15px;
+    position: relative;
+    width: calc(100% - 15px);
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -10px;
+        width: 1px;
+        height: calc(#{$elem-height} + 10px);
+        background-color: $cc9;
+    }
+
+    &:last-child::after {
+        height: calc(#{$elem-height} / 2 + 5px);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: calc(#{$elem-height} / 2);
+        left: -10px;
+        width: 8px;
+        height: 1px;
+        background-color: $cc9;
+    }
+
+    &[open]:not(:last-child)::after {
+        height: calc(100% + 5px);
+    }
+}
+
+@mixin cont_qs1 {
+    color: $cc9;
+    padding: 8px;
+    background-color: $cc0;
+    color: $cc9;
+    text-transform: uppercase;
+
+    &::-webkit-details-marker {
+        margin-right: 14px;
+    }
+}
+
+@mixin cont_qs2 {
+    color: $cc9;
+    padding: 8px;
+    background-color: $cc3;
+    color: $cc9;
+    text-transform: uppercase;
+
+    &::-webkit-details-marker {
+        margin-right: 14px;
+    }
+}
+
+@mixin cont_qs3 {
+    color: $cc9;
+    padding: 8px;
+    background-color: $cc2;
+    color: $cc9;
+    text-transform: uppercase;
+
+    &::-webkit-details-marker {
+        margin-right: 14px;
+    }
+}
+
+@mixin cont_qs4 {
+    color: $cc9!important;
+    padding: 8px;
+    background-color: $cc6;
+    color: $cc0;
+    text-transform: uppercase;
+
+    &::-webkit-details-marker {
+        margin-right: 14px;
+    }
+}
+
+@mixin cont_qs5 {
+    color: $cc0;
+    padding: 8px;
+    background-color: $cc9;
+    color: $cc0;
+    border: 1px solid $cc6;
+    
+
+    &::-webkit-details-marker {
+        margin-right: 14px;
+    }
+}
+
+@mixin answers {
+    color: $cc9;
+    padding: 8px;
+    background-color: $cc0;
+    color: $cc9;
+    text-transform: uppercase;
+
+    &::-webkit-details-marker {
+        margin-right: 14px;
+    }
+}
+
+@mixin cont_details {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: $cc9;
+    color: $cc0;
+    position: relative;
+
+    span {
+        color: #041320;
+    }
+}

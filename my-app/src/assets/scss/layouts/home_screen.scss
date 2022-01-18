@@ -1,0 +1,50 @@
+.h_screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grd_left grd_tight";
+    grid-area: grd_body;
+    height: 100vh;
+    //background: url('../../images/bk_home.svg');
+    background-repeat: no-repeat;
+    background-size: 140% 140%;
+    background-position: center center;
+    animation: shrink 1s;
+
+    @keyframes shrink {
+        0% {
+            background-size: 20% 20%;
+            opacity: -10;
+        }
+
+        100% {
+            background-size: 140% 140%;
+        }
+    }
+
+    .grd_left {
+        grid-area: grd_left;
+        //background-color: blueviolet;
+
+        div {
+            clear: both;
+
+            &:nth-child(1n) {
+                padding: 36px;
+                //background-color: chartreuse;
+            }
+
+            &:nth-child(2n) {
+                height: 100%;
+            }
+        }
+    }
+
+    .grd_tight {
+        shape-image-threshold: 0;
+        grid-area: grd_tight;
+    }
+}

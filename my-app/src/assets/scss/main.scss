@@ -1,0 +1,85 @@
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+@import 'abstracts/setting.scss',
+'abstracts/mixins.scss',
+'abstracts/ui_demo.scss';
+
+@import 'components/list_exp.scss',
+'components/select_option.scss',
+'components/buttons.scss',
+'components/btn_logout.scss';
+
+@import 'layouts/home_screen.scss',
+'layouts/lyt_one.scss';
+@import 'base/theme_default.scss';
+
+@import 'base/animations/slide_in_top.scss',
+'base/animations/slide_out_top.scss',
+'base/animations/slide_in_bottom.scss', // out?
+'base/animations/slide_in_blurred_top.scss',
+'base/animations/slide_in_blurred_top.scss',
+'base/animations/slide_out_blurred_top.scss',
+'base/animations/slide_in_blurred_bottom.scss',
+'base/animations/slide_in_blurred_left.scss',
+'base/animations/slide_in_blurred_right.scss',
+'base/animations/slide_in_blurred_bl.scss',
+'base/animations/swing_in_bottom_bck.scss',
+'base/animations/tracking_in_expand.scss';//texts
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.kenburns_top_right {
+  display: block;
+	-webkit-animation: kenburns_top_right 5s ease-out both;
+	        animation: kenburns_top_right 5s ease-out both;
+}
+
+/**
+ * ----------------------------------------
+ * animation kenburns_top_right
+ * ----------------------------------------
+ */
+ @-webkit-keyframes kenburns_top_right {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 16%;
+            transform-origin: 84% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(20px, -15px);
+            transform: scale(1.25) translate(20px, -15px);
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+  }
+}
+@keyframes kenburns_top_right {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 16%;
+            transform-origin: 84% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(20px, -15px);
+            transform: scale(1.25) translate(20px, -15px);
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+  }
+}

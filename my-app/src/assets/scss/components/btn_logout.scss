@@ -1,0 +1,15 @@
+.btnLogOut {
+    cursor: pointer;
+
+    div {
+        float: left;
+
+        &:nth-child(1n) {
+            margin-right: 8px;
+        }
+
+        &:nth-child(2n) {
+            line-height: 48px;
+        }
+    }
+}

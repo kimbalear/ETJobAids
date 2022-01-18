@@ -1,0 +1,417 @@
+.lyt_one {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 96px 1fr 96px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grd_top_nav"
+        "grd_cont"
+        "grd_bottom_nav";
+    background-color: $cc1;
+    width: 100%;
+    height: 100vh;
+
+    .grd_top_nav {
+        grid-area: grd_top_nav;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 96px;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "grd_left_top grd_right_top";
+        background-color: $cc1;
+
+        &:hover {
+            .grd_left_top {
+                .logout_icon {
+                    path {
+                        fill: $cc0;
+                    }
+                }
+
+                label {
+                    color: $cc0;
+                }
+            }
+
+        }
+
+        .grd_left_top {
+            text-align: left;
+            padding: 24px 0 24px 24px;
+            grid-area: grd_left_top;
+        }
+
+        .grd_right_top {
+            text-align: right;
+            padding: 24px 24px 24px 0;
+            grid-area: grd_right_top;
+
+            div {
+                float: right;
+            }
+        }
+
+        &:hover {
+            background-color: $cc2;
+        }
+    }
+
+    .grd_cont {
+        grid-area: grd_cont;
+
+        //LYT Data entry
+        .form_d_entry {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 150px 1fr 50px 1fr;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2"
+                "grd_line3"
+                "grd_line4";
+            height: 100%;
+
+            .grd_line1 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                overflow-y: auto;
+                overflow-x: hidden;
+                justify-content: center;
+                justify-self: center;
+                padding: 0 1em;
+                grid-area: grd_line2;
+
+                .select_form {
+                    min-width: 150px;
+
+                    @media screen and (max-width: $small) {
+                        width: 100%;
+                        margin-bottom: 12px;
+                    }
+
+                    @media screen and (min-width: $medium) {
+                        width: 46%;
+                        margin-bottom: 12px;
+                    }
+
+                    @media screen and (min-width: $xlarge) {
+                        width: 20%;
+                        margin-bottom: 12px;
+                    }
+                }
+
+            }
+
+            .grd_line3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                padding: 0 1em;
+                padding-top: 32px;
+                grid-area: grd_line3;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+
+            .grd_line4 {
+                padding: 0 1em;
+                justify-content: center;
+                justify-self: center;
+                padding-top: 32px;
+                grid-area: grd_line4;
+
+                .btn_go {
+
+                    @media screen and (max-width: $small) {
+                        width: 12rem;
+                        margin-bottom: 12px;
+                    }
+
+                    @media screen and (min-width: $medium) {
+                        width: 12rem;
+                        margin-bottom: 12px;
+                    }
+                }
+
+                @media screen and (max-width: $large) {
+                    width: 12rem;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        //[END] LYT Data entry
+
+        //LYT INT1 Welcome Video
+        .int1 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 1fr;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2";
+            height: 100%;
+            display: none;
+
+            .grd_line1 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                text-align: center;
+                grid-area: grd_line2;
+
+                .content_video {
+                    position: relative;
+                    padding-top: 25px;
+                    height: 100%;
+
+                    iframe {
+                        position: absolute;
+                        top: 0;
+                        left: calc(100% / 4);
+                        width: calc(100% / 2);
+                        height: 80%;
+                        border-radius: 10px;
+                        -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                        -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                        box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                        border: 4px solid #722022;
+                    }
+                }
+            }
+        }
+
+        //[END] LYT INT1 Welcome Video
+
+        //LYT INT2 Self or Husband
+        .int2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px auto 1fr;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2"
+                "grd_line3";
+            height: 100%;
+            display: none;
+
+            .grd_line1 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line2;
+
+                h2 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: grd_line3;
+
+                div {
+                    margin-top: 21px;
+                    float: left;
+
+                    img {
+                        margin: 32px;
+                        cursor: pointer;
+                        -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                        -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                        box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                        height: 20vw !important;
+                        width: 20vw !important;
+                        border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -webkit-border-radius: 50%;
+
+                        @media screen and (max-width: $xlarge) {
+                            height: 35vw !important;
+                            width: 35vw !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        //[END] LYT INT2 Self or Husband
+
+        //LYT INT3 New or Returning User
+        .int3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 1fr 1fr;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2"
+                "grd_line3";
+            height: 100%;
+            display: none;
+
+            .grd_line1 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line2;
+
+                div {
+                    margin-top: 21px;
+                    float: left;
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+
+                    img {
+                        margin: 32px;
+                        cursor: pointer;
+                        -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                        -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                        box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                        height: 240px;
+                        border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                    }
+                }
+            }
+
+            .grd_line3 {
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line3;
+
+                div {
+                    float: left;
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+
+                    h2 {
+                        min-width: 240px;
+                        width: 100%;
+                        text-align: center;
+                        margin: 0 32px;
+                    }
+                }
+            }
+        }
+
+        //[END] LYT INT3 New or Returning User
+    }
+
+    .grd_bottom_nav {
+        grid-area: grd_bottom_nav;
+
+        .int1 {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: 100%;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_btm_left grd_btm_center grd_btm_right";
+            height: 100%;
+            display: none;
+
+
+
+            .grd_btm_left {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                padding: 0 0 16px 30px;
+                grid-area: grd_btm_left;
+            }
+
+            .grd_btm_center {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_btm_center;
+            }
+
+            .grd_btm_right {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                padding: 0 30px 16px 0;
+                grid-area: grd_btm_right;
+            }
+
+        }
+    }
+}
