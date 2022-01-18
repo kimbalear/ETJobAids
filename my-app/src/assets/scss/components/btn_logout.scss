@@ -10,6 +10,14 @@
 
         &:nth-child(2n) {
             line-height: 48px;
+            color: $cc2;
+        }
+    }
+
+    &:hover {
+        div {
+            font-weight: 800;
+            letter-spacing: 1px;
         }
     }
 }

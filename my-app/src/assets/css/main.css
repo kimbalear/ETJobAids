@@ -734,6 +734,11 @@
 }
 .btnLogOut div:nth-child(2n) {
   line-height: 48px;
+  color: #F5CBA3;
+}
+.btnLogOut:hover div {
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .h_screen {
@@ -801,11 +806,14 @@
   grid-template-areas: "grd_left_top grd_right_top";
   background-color: #FDE8D3;
 }
-.lyt_one .grd_top_nav:hover .grd_left_top .logout_icon path {
-  fill: #383D47;
+.lyt_one .grd_top_nav:hover .grd_left_top:hover div:nth-child(1n) {
+  margin-right: 8px;
 }
-.lyt_one .grd_top_nav:hover .grd_left_top label {
-  color: #383D47;
+.lyt_one .grd_top_nav:hover .grd_left_top:hover div:nth-child(1n) .logout_icon path {
+  fill: #722022;
+}
+.lyt_one .grd_top_nav:hover .grd_left_top:hover div:nth-child(2n) {
+  color: #722022;
 }
 .lyt_one .grd_top_nav .grd_left_top {
   text-align: left;
@@ -825,6 +833,48 @@
 }
 .lyt_one .grd_cont {
   grid-area: grd_cont;
+}
+.lyt_one .grd_cont .int1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "grd_line1" "grd_line2";
+  height: 100%;
+}
+.lyt_one .grd_cont .int1 .grd_line1 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  grid-area: grd_line1;
+}
+.lyt_one .grd_cont .int1 .grd_line1 h1 {
+  padding: 0 1em;
+  text-align: center;
+}
+.lyt_one .grd_cont .int1 .grd_line2 {
+  text-align: center;
+  grid-area: grd_line2;
+}
+.lyt_one .grd_cont .int1 .grd_line2 .content_video {
+  position: relative;
+  padding-top: 25px;
+  height: 100%;
+}
+.lyt_one .grd_cont .int1 .grd_line2 .content_video iframe {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 80%;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+  border: 4px solid #722022;
 }
 .lyt_one .grd_cont .form_d_entry {
   display: grid;
@@ -912,49 +962,6 @@
     width: 12rem;
     margin-bottom: 12px;
   }
-}
-.lyt_one .grd_cont .int1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 200px 1fr;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "grd_line1" "grd_line2";
-  height: 100%;
-  display: none;
-}
-.lyt_one .grd_cont .int1 .grd_line1 {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  grid-area: grd_line1;
-}
-.lyt_one .grd_cont .int1 .grd_line1 h1 {
-  padding: 0 1em;
-  text-align: center;
-}
-.lyt_one .grd_cont .int1 .grd_line2 {
-  text-align: center;
-  grid-area: grd_line2;
-}
-.lyt_one .grd_cont .int1 .grd_line2 .content_video {
-  position: relative;
-  padding-top: 25px;
-  height: 100%;
-}
-.lyt_one .grd_cont .int1 .grd_line2 .content_video iframe {
-  position: absolute;
-  top: 0;
-  left: 25%;
-  width: 50%;
-  height: 80%;
-  border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-  border: 4px solid #722022;
 }
 .lyt_one .grd_cont .int2 {
   display: grid;
@@ -1081,7 +1088,7 @@
 .lyt_one .grd_bottom_nav {
   grid-area: grd_bottom_nav;
 }
-.lyt_one .grd_bottom_nav .int1 {
+.lyt_one .grd_bottom_nav .btm_nab_one {
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: 100%;
@@ -1091,22 +1098,21 @@
   grid-auto-flow: row;
   grid-template-areas: "grd_btm_left grd_btm_center grd_btm_right";
   height: 100%;
-  display: none;
 }
-.lyt_one .grd_bottom_nav .int1 .grd_btm_left {
+.lyt_one .grd_bottom_nav .btm_nab_one .grd_btm_left {
   display: flex;
   justify-self: center;
   align-items: center;
   padding: 0 0 16px 30px;
   grid-area: grd_btm_left;
 }
-.lyt_one .grd_bottom_nav .int1 .grd_btm_center {
+.lyt_one .grd_bottom_nav .btm_nab_one .grd_btm_center {
   display: flex;
   justify-self: center;
   align-items: center;
   grid-area: grd_btm_center;
 }
-.lyt_one .grd_bottom_nav .int1 .grd_btm_right {
+.lyt_one .grd_bottom_nav .btm_nab_one .grd_btm_right {
   display: flex;
   justify-self: center;
   align-items: center;
