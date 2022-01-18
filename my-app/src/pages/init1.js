@@ -3,7 +3,8 @@ import SelectOp from '../components/select_op'
 import LogOut from '../components/btns/log_out'
 import BtnNavBack from '../components/btns/BtnNavBack'
 import BtnNavNext from '../components/btns/BtnNavNext'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom"
+
 
 
 class Init1 extends Component {
@@ -47,9 +48,9 @@ class Init1 extends Component {
                         </div>
                         <div className="grd_btm_center"></div>
                         <div className="grd_btm_right">
-                        <Link to='/'>
-                            <BtnNavNext text_btn="next" />
-                        </Link>   
+                            <Link to="Init_2">
+                                <BtnNavNext text_btn="next" />
+                            </Link>
                         </div>
                     </div>
                 </div>
