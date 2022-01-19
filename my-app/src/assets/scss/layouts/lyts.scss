@@ -74,7 +74,7 @@
     .grd_cont {
         grid-area: grd_cont;
 
-        //LYT INT1 Welcome Video
+        //LYT INT1
         .int1 {
             display: grid;
             grid-template-columns: 1fr;
@@ -125,6 +125,393 @@
                 }
             }
         }
+
+        //[END] LYT INT1
+
+        //LYT INT2
+        .int2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px auto 1fr auto;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2"
+                "grd_line3";
+            height: 100%;
+            //display: none;
+
+            .grd_line1 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line2;
+
+                h2 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line3 {
+                display: flex;
+                grid-area: grd_line3;
+
+                div {
+                    margin: 0 auto;
+
+                    div {
+                        float: left;
+
+                        div {
+                            clear: both;
+                            width: 100%;
+                            height: auto;
+
+                            svg {
+                                margin: 50px 32px 0;
+                                cursor: pointer;
+                                -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                height: 23vw !important;
+                                width: 23vw !important;
+                                border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -webkit-border-radius: 50%;
+
+                                @media screen and (min-width: $xlarge) {
+                                    height: 30vw !important;
+                                    width: 30vw !important;
+                                }
+
+                                @media screen and (min-width: $xxlarge) {
+                                    height: 15vw !important;
+                                    width: 15vw !important;
+                                }
+
+                            }
+
+                            @media screen and (max-width: 447px) {
+                                clear: both;
+                                float: none;
+                            }
+
+
+                            h2 {
+                                text-align: center;
+                                margin: 21px 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //[END] LYT INT2
+
+        //LYT INT3
+        .int3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 1fr;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2";
+            height: 100%;
+            //display: none;
+
+            .grd_line1 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                display: flex;
+                grid-area: grd_line2;
+
+                div {
+                    margin: 0 auto;
+
+                    div {
+                        float: left;
+
+                        div {
+                            clear: both;
+                            width: 100%;
+                            height: auto;
+
+                            svg {
+                                margin: 50px 32px 0;
+                                cursor: pointer;
+                                -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                height: 23vw !important;
+                                width: 23vw !important;
+                                border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -webkit-border-radius: 50%;
+
+                                @media screen and (min-width: $xlarge) {
+                                    height: 30vw !important;
+                                    width: 30vw !important;
+                                }
+
+                                @media screen and (min-width: $xxlarge) {
+                                    height: 15vw !important;
+                                    width: 15vw !important;
+                                }
+
+                            }
+
+                            @media screen and (max-width: 447px) {
+                                clear: both;
+                                float: none;
+                            }
+
+
+                            h2 {
+                                text-align: center;
+                                margin: 21px 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //[END] LYT INT3
+
+        //LYT SS1
+        .ss1 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px auto 1fr auto;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2"
+                "grd_line3";
+            height: 100%;
+            //display: none;
+
+            .grd_line1 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line2;
+
+                h2 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line3 {
+                display: flex;
+                grid-area: grd_line3;
+
+                div {
+                    margin: 0 auto;
+
+                    div {
+                        float: left;
+
+                        div {
+                            clear: both;
+                            width: 100%;
+                            height: auto;
+
+                            svg {
+                                margin: 50px 32px 0;
+                                cursor: pointer;
+                                -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                height: 23vw !important;
+                                width: 23vw !important;
+                                border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -webkit-border-radius: 50%;
+
+                                @media screen and (min-width: $xlarge) {
+                                    height: 30vw !important;
+                                    width: 30vw !important;
+                                }
+
+                                @media screen and (min-width: $xxlarge) {
+                                    height: 15vw !important;
+                                    width: 15vw !important;
+                                }
+
+                            }
+
+                            @media screen and (max-width: 447px) {
+                                clear: both;
+                                float: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //[END] LYT SS1
+
+        //LYT SS1.1
+        .ss1_1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100%;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_left grd_right";
+
+            .grd_left {
+                grid-area: grd_left;
+
+                div {
+                    background-color: $cc2;
+                    height: 30vw !important;
+                    width: 30vw !important;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    margin: 50px 0;
+                    cursor: pointer;
+                    float: right;
+                    border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                    -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                    border: 4px solid #722022;
+
+                    svg {}
+
+                    @media screen and (max-width: 447px) {
+                        clear: both;
+                        float: none;
+                    }
+                }
+            }
+
+            .grd_right {
+                grid-area: grd_right;
+
+                div {
+                    padding: 50px 1em 0;
+
+                    h1 {
+                        text-align: center;
+                    }
+
+                    h2 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        /* 
+        .ss1_1 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px auto 1fr auto;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2"
+                "grd_line3";
+            height: 100%;
+            //display: none;
+
+            .grd_line1 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line2;
+
+                h2 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line3 {
+                display: flex;
+                grid-area: grd_line3;
+
+                div {
+                    margin: 0 auto;
+
+                    
+                }
+            }
+        }*/
+        //[END] LYT SS1.1
+
+
 
         //LYT Data entry
         .form_d_entry {
@@ -225,191 +612,6 @@
         }
 
         //[END] LYT Data entry
-
-
-
-        //[END] LYT INT1 Welcome Video
-
-        //LYT INT2 Self or Husband
-        .int2 {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 200px auto 1fr auto;
-            grid-auto-columns: 1fr;
-            grid-auto-rows: 1fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-                "grd_line1"
-                "grd_line2"
-                "grd_line3";
-            height: 100%;
-            //display: none;
-
-            .grd_line1 {
-                display: flex;
-                justify-self: center;
-                align-items: center;
-                grid-area: grd_line1;
-
-                h1 {
-                    padding: 0 1em;
-                    text-align: center;
-                }
-            }
-
-            .grd_line2 {
-                display: flex;
-                justify-self: center;
-                align-items: center;
-                grid-area: grd_line2;
-
-                h2 {
-                    padding: 0 1em;
-                    text-align: center;
-                }
-            }
-
-            .grd_line3 {
-                display: flex;
-                grid-area: grd_line3;
-
-                div {
-                    margin: 0 auto;
-
-                    div {
-                        float: left;
-
-                        div {
-                            clear: both;
-                            width: 100%;
-                            height: auto;
-
-                                svg {
-                                    margin: 50px 32px 0;
-                                    cursor: pointer;
-                                    -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                                    -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                                    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                                    height: 23vw !important;
-                                    width: 23vw !important;
-                                    border-radius: 50%;
-                                    -moz-border-radius: 50%;
-                                    -webkit-border-radius: 50%;
-
-                                    @media screen and (min-width: $xlarge) {
-                                        height: 30vw !important;
-                                        width: 30vw !important;
-                                    }
-
-                                    @media screen and (min-width: $xxlarge) {
-                                        height: 15vw !important;
-                                        width: 15vw !important;
-                                    }
-
-                                }
-
-                                @media screen and (max-width: 447px) {
-                                    clear: both;
-                                    float: none;
-                                }
-
-
-                            h2 {
-                                text-align: center;
-                                margin: 21px 8px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        //[END] LYT INT2 Self or Husband
-
-        //LYT INT3 New or Returning User
-        .int3 {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 200px 1fr;
-            grid-auto-columns: 1fr;
-            grid-auto-rows: 1fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-                "grd_line1"
-                "grd_line2";
-            height: 100%;
-            //display: none;
-
-            .grd_line1 {
-                display: flex;
-                justify-self: center;
-                align-items: center;
-                grid-area: grd_line1;
-
-                h1 {
-                    padding: 0 1em;
-                    text-align: center;
-                }
-            }
-
-            .grd_line2 {
-                display: flex;
-                grid-area: grd_line2;
-
-                div {
-                    margin: 0 auto;
-
-                    div {
-                        float: left;
-
-                        div {
-                            clear: both;
-                            width: 100%;
-                            height: auto;
-
-                                svg {
-                                    margin: 50px 32px 0;
-                                    cursor: pointer;
-                                    -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                                    -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                                    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                                    height: 23vw !important;
-                                    width: 23vw !important;
-                                    border-radius: 50%;
-                                    -moz-border-radius: 50%;
-                                    -webkit-border-radius: 50%;
-
-                                    @media screen and (min-width: $xlarge) {
-                                        height: 30vw !important;
-                                        width: 30vw !important;
-                                    }
-
-                                    @media screen and (min-width: $xxlarge) {
-                                        height: 15vw !important;
-                                        width: 15vw !important;
-                                    }
-
-                                }
-
-                                @media screen and (max-width: 447px) {
-                                    clear: both;
-                                    float: none;
-                                }
-
-
-                            h2 {
-                                text-align: center;
-                                margin: 21px 8px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        //[END] LYT INT3 New or Returning User
     }
 
     .grd_bottom_nav {

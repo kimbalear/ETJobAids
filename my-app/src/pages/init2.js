@@ -1,5 +1,5 @@
 import React from "react"
-import SelectOp from '../components/select_op'
+import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/log_out'
 import BtnNavBack from '../components/btns/BtnNavBack'
 import BtnNavNext from '../components/btns/BtnNavNext'
@@ -15,7 +15,7 @@ const Init2 = () => {
 
     let Data = {
         title: 'Are you here by yourself?',
-        subtitle: 'If you are married, are you here with your husband?',
+        subtitle: '',
         cta1: 'By my self',
         cta2: 'With my husband',
         btns: ['back', 'next']

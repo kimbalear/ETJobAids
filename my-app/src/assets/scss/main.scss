@@ -7,11 +7,13 @@
 @import 'components/list_exp.scss',
 'components/select_option.scss',
 'components/buttons.scss',
-'components/btn_logout.scss';
+'components/btn_logout.scss',
+'components/text_field.scss';
 
 @import 'layouts/home_screen.scss',
 'layouts/lyts.scss';
-@import 'base/theme_default.scss';
+@import 'base/theme_default.scss',
+'base/audio.scss';
 
 @import 'base/animations/slide_in_top.scss',
 'base/animations/slide_out_top.scss',
