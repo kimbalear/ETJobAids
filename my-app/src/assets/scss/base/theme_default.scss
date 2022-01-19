@@ -19,3 +19,52 @@
     border-radius: 0px;
     box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
+
+:root {
+    /* generic */
+    --gutterSm:0.8rem;
+    --gutterMd:1rem;
+    --gutterLg:1.2rem;
+    --gutterXl:1.5rem;
+    --gutterXx:1.8rem;
+    --colorPrimary400:#E2745D;
+    --colorPrimary600:#DF603C;
+    --colorPrimary800:#ECB343;
+    --fontFamily:"Dosis", sans-serif;
+    --fontSizeSm:0.8rem;
+    --fontSizeMd:1rem;
+    --fontSizeLg:1.2rem;
+    --fontSizeXl:1.5rem;
+    --fontSizeXx:1.8rem;
+
+    --fontSizeH1:1.8vw;
+    --marginTopBtmH1:5vw;
+
+    --fontSizeH2:1vw;
+    --marginTopBtmH2:5vw;
+
+    --lineHeightSm:0.8;
+    --lineHeightMd:1;
+    --transitionDuration:300ms;
+    --transitionTF:cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+    /* floated labels */
+    --inputPaddingV:var(--gutterMd);
+    --inputPaddingH:var(--gutterLg);
+    --inputFontSize:var(--fontSizeMd);
+    --inputLineHeight:var(--lineHeightMd);
+    --labelScaleFactor:0.8;
+    --labelDefaultPosY:80%;
+    --labelTransformedPosY:calc( (var(--labelDefaultPosY)) -  (var(--inputPaddingV) * var(--labelScaleFactor)) -  (var(--inputFontSize) * var(--inputLineHeight)) );
+    --inputTransitionDuration:var(--transitionDuration);
+    --inputTransitionTF:var(--transitionTF);
+  }
+
+  h1{
+    font-size: calc(1rem + var(--fontSizeH1));
+    margin-top: calc(2px + var(--marginTopBtmH1));
+  }
+
+  h2{
+    font-size: calc(0.8rem + var(--fontSizeH2));
+  }

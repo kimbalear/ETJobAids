@@ -1,14 +1,10 @@
 import React, { Component } from "react"
 
-const TextField = () => {
-    let fieldlabel = "Name"
-    let fieldHolder = "Your full name"
-
+export default function TextField(props) {
     return (
-        <div className="Input">
-            <input type="text" id="input" className="Input-text" placeholder={fieldHolder}/>
-            <label for="input" className="Input-label">{fieldlabel}</label>
+        <div className="input slide_in_blurred_right">
+            <input type="text" className="input_text" placeholder={props.flds_holder}/>
+            <label for="input" className="input_label">{props.flds_lbls}</label>
         </div>
     )
 }
-export default TextField;

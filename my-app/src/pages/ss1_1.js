@@ -14,11 +14,13 @@ const Ss1_1 = () => {
     }
 
     let Data = {
-        title: "Let's start by learning a litle bit more about you!",
-        subtitle: 'Select an avatar the describes your personality',
+        title: "Tell us a little bit more about you",
         cta1: 'New user',
         cta2: 'Returning user',
-        btns: ['back', 'next']
+        btns: ['back', 'next'],
+        flds_lbls: ['Name', 'Age', 'Your answer'],
+        flds_holder: ['Your full names', 'Your age', 'Write your answer'],
+        q: "Who referred you?"
     }
 
     return (
@@ -41,13 +43,24 @@ const Ss1_1 = () => {
                         </div>
                     </div>
                     <div class="grd_right">
-                        <div className="grd_line1 ">
-                            <h1 className="slide_in_blurred_top">{Data.title}</h1>
+                        <div className="header">
+                            <div className="grd_line1 ">
+                                <h1 className="slide_in_blurred_top">{Data.title}</h1>
+                            </div>
                         </div>
-                        <div className="grd_line2">
-                            <h2 className="tracking_in_expand">{Data.subtitle}</h2>
+                        <div className="cont">
+                            <div className="flds">
+                                <TextField flds_lbls={Data.flds_lbls[0]} flds_holder={Data.flds_holder[0]} />
+                            </div>
+                            <div className="flds">
+                                <TextField flds_lbls={Data.flds_lbls[1]} flds_holder={Data.flds_holder[1]} />
+                            </div>
+                            <div className="qsts">
+                                <h3>{Data.q}</h3>
+                                <TextField flds_holder={Data.flds_holder[2]} />
+                            </div>
                         </div>
-                        <TextField/>
+
                     </div>
                 </div>
             </div>
