@@ -3,8 +3,8 @@ import SelectOp from '../components/select_op'
 import LogOut from '../components/btns/log_out'
 import BtnNavBack from '../components/btns/BtnNavBack'
 import BtnNavNext from '../components/btns/BtnNavNext'
-import { ReactComponent as ByMySelft } from '../assets/images/By_myself.svg'
-import { ReactComponent as WithMyHusband } from '../assets/images/with_my_husband.svg'
+import { ReactComponent as NewUser } from '../assets/images/new_user.svg'
+import { ReactComponent as ReturningUser } from '../assets/images/returning_user.svg'
 import { useNavigate } from "react-router-dom"
 
 const Init2 = () => {
@@ -14,10 +14,9 @@ const Init2 = () => {
     }
 
     let Data = {
-        title: 'Are you here by yourself?',
-        subtitle: 'If you are married, are you here with your husband?',
-        cta1: 'By my self',
-        cta2: 'With my husband',
+        title: 'Kindly let us know if you are a new user or a returning user',
+        cta1: 'New user',
+        cta2: 'Returning user',
         btns: ['back', 'next']
     }
 
@@ -34,18 +33,15 @@ const Init2 = () => {
                 </div>
             </div>
             <div className="grd_cont">
-                <div className="int2">
+                <div className="int3">
                     <div className="grd_line1 ">
                         <h1 className="slide_in_blurred_top">{Data.title}</h1>
                     </div>
                     <div className="grd_line2">
-                        <h2 className="tracking_in_expand">{Data.subtitle}</h2>
-                    </div>
-                    <div className="grd_line3">
                         <div>
                             <div>
                                 <div className="slide_in_blurred_left">
-                                    <ByMySelft />
+                                    <NewUser />
                                 </div>
                                 <div className="tracking_in_expand">
                                     <h2>{Data.cta1}</h2>
@@ -53,7 +49,7 @@ const Init2 = () => {
                             </div>
                             <div>
                                 <div className="slide_in_blurred_right">
-                                    <WithMyHusband />
+                                    <ReturningUser />
                                 </div>
                                 <div className="tracking_in_expand">
                                     <h2>{Data.cta2}</h2>

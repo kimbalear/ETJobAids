@@ -1,4 +1,4 @@
-.lyt_one {
+.lyts {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 96px 1fr 96px;
@@ -234,7 +234,7 @@
         .int2 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 200px auto 1fr;
+            grid-template-rows: 200px auto 1fr auto;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
@@ -272,29 +272,53 @@
 
             .grd_line3 {
                 display: flex;
-                justify-content: center;
-                align-items: center;
                 grid-area: grd_line3;
 
                 div {
-                    margin-top: 21px;
-                    float: left;
+                    margin: 0 auto;
 
-                    img {
-                        margin: 32px;
-                        cursor: pointer;
-                        -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                        -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                        box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                        height: 20vw !important;
-                        width: 20vw !important;
-                        border-radius: 50%;
-                        -moz-border-radius: 50%;
-                        -webkit-border-radius: 50%;
+                    div {
+                        float: left;
 
-                        @media screen and (max-width: $xlarge) {
-                            height: 35vw !important;
-                            width: 35vw !important;
+                        div {
+                            clear: both;
+                            width: 100%;
+                            height: auto;
+
+                                svg {
+                                    margin: 50px 32px 0;
+                                    cursor: pointer;
+                                    -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                    -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                    height: 23vw !important;
+                                    width: 23vw !important;
+                                    border-radius: 50%;
+                                    -moz-border-radius: 50%;
+                                    -webkit-border-radius: 50%;
+
+                                    @media screen and (min-width: $xlarge) {
+                                        height: 30vw !important;
+                                        width: 30vw !important;
+                                    }
+
+                                    @media screen and (min-width: $xxlarge) {
+                                        height: 15vw !important;
+                                        width: 15vw !important;
+                                    }
+
+                                }
+
+                                @media screen and (max-width: 447px) {
+                                    clear: both;
+                                    float: none;
+                                }
+
+
+                            h2 {
+                                text-align: center;
+                                margin: 21px 8px;
+                            }
                         }
                     }
                 }
@@ -307,17 +331,16 @@
         .int3 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 200px 1fr 1fr;
+            grid-template-rows: 200px 1fr;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
                 "grd_line1"
-                "grd_line2"
-                "grd_line3";
+                "grd_line2";
             height: 100%;
-            display: none;
+            //display: none;
 
             .grd_line1 {
                 display: flex;
@@ -332,47 +355,55 @@
             }
 
             .grd_line2 {
-                justify-self: center;
-                align-items: center;
+                display: flex;
                 grid-area: grd_line2;
 
                 div {
-                    margin-top: 21px;
-                    float: left;
-                    display: flex;
-                    justify-self: center;
-                    align-items: center;
+                    margin: 0 auto;
 
-                    img {
-                        margin: 32px;
-                        cursor: pointer;
-                        -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                        -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                        box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
-                        height: 240px;
-                        border-radius: 50%;
-                        -moz-border-radius: 50%;
-                        -webkit-border-radius: 50%;
-                    }
-                }
-            }
+                    div {
+                        float: left;
 
-            .grd_line3 {
-                justify-self: center;
-                align-items: center;
-                grid-area: grd_line3;
+                        div {
+                            clear: both;
+                            width: 100%;
+                            height: auto;
 
-                div {
-                    float: left;
-                    display: flex;
-                    justify-self: center;
-                    align-items: center;
+                                svg {
+                                    margin: 50px 32px 0;
+                                    cursor: pointer;
+                                    -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                    -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.19);
+                                    height: 23vw !important;
+                                    width: 23vw !important;
+                                    border-radius: 50%;
+                                    -moz-border-radius: 50%;
+                                    -webkit-border-radius: 50%;
 
-                    h2 {
-                        min-width: 240px;
-                        width: 100%;
-                        text-align: center;
-                        margin: 0 32px;
+                                    @media screen and (min-width: $xlarge) {
+                                        height: 30vw !important;
+                                        width: 30vw !important;
+                                    }
+
+                                    @media screen and (min-width: $xxlarge) {
+                                        height: 15vw !important;
+                                        width: 15vw !important;
+                                    }
+
+                                }
+
+                                @media screen and (max-width: 447px) {
+                                    clear: both;
+                                    float: none;
+                                }
+
+
+                            h2 {
+                                text-align: center;
+                                margin: 21px 8px;
+                            }
+                        }
                     }
                 }
             }

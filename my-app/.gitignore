@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/src/assets/images/JOB_AIDS_wetransfer
 .pnp.js
 
 # testing

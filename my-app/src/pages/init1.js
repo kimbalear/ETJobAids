@@ -9,12 +9,12 @@ import { Link } from "react-router-dom"
 
 const Init1 = () => {
     let Data = {
-        title: 'Wellcome',
+        title: 'Welcome',
         btns: ['back', 'next']
     }
 
     return (
-        <div className="lyt_one">
+        <div className="lyts">
             <div className="grd_top_nav">
                 <div className="grd_left_top">
                     <LogOut />
