@@ -1,4 +1,4 @@
 * From the root directory of the app:
 ```
-sass --watch assets/scss/main.scss:assets/css/main.css
+sass --watch src/assets/scss/main.scss:src/assets/css/main.css
 ```

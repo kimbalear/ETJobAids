@@ -973,7 +973,6 @@
   grid-auto-flow: row;
   grid-template-areas: "grd_line1" "grd_line2" "grd_line3";
   height: 100%;
-  display: none;
 }
 .lyt_one .grd_cont .int2 .grd_line1 {
   display: flex;
