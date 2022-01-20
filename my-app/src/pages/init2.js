@@ -16,7 +16,7 @@ const Init2 = () => {
     let Data = {
         title: 'Are you here by yourself?',
         subtitle: '',
-        cta1: 'By my self',
+        cta1: 'By myself',
         cta2: 'With my husband',
         btns: ['back', 'next']
     }

@@ -4,12 +4,11 @@
   .input_label {
     display: block;
     position: absolute;
-    bottom: 70%;
+    bottom: 80%;
     left: 1.1rem;
     color: $cc0;
-    font-family: inherit;
     font-size: var(--inputFontSize);
-    font-weight: inherit;
+    font-weight: 500;
     line-height: var(--inputLineHeight);
     opacity: 0;
     transform: translate3d(0, var(--labelDefaultPosY), 0) scale(1);
@@ -30,25 +29,77 @@
     border: none;
     border-radius: 3rem;
     transition: box-shadow var(--transitionDuration);
-  
+
     &::placeholder {
       color: #B0BEC5;
     }
-  
+
     &:focus {
       outline: none;
-      box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);
+      box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
+    }
+  }
+
+  .input_num {
+    display: block;
+    margin: 0;
+    padding: var(--inputPaddingV) var(--inputPaddingH);
+    color: inherit;
+    width: 100%;
+    font-family: inherit;
+    font-size: var(--inputFontSize);
+    font-weight: inherit;
+    line-height: var(--inputLineHeight);
+    border: none;
+    border-radius: 3rem;
+    transition: box-shadow var(--transitionDuration);
+    text-align: center;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    &::placeholder {
+      color: #B0BEC5;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
     }
   }
 }
 
 .input_text {
-  &:placeholder-shown + .input_label {
+  &:placeholder-shown+.input_label {
     visibility: hidden;
     z-index: -1;
   }
 
-  &:not(:placeholder-shown) + .input_label, &:focus:not(:placeholder-shown) + .input_label {
+  &:not(:placeholder-shown)+.input_label,
+  &:focus:not(:placeholder-shown)+.input_label {
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+    transform: translate3d(0, var(--labelTransformedPosY), 0) scale(var(--labelScaleFactor));
+    transition: transform var(--inputTransitionDuration), visibility 0ms, z-index 0ms;
+  }
+}
+
+.input_num {
+  &:placeholder-shown+.input_label {
+    visibility: hidden;
+    z-index: -1;
+  }
+
+  &:not(:placeholder-shown)+.input_label,
+  &:focus:not(:placeholder-shown)+.input_label {
     visibility: visible;
     z-index: 1;
     opacity: 1;

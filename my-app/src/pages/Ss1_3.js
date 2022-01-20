@@ -4,23 +4,22 @@ import LogOut from '../components/btns/log_out'
 import BtnNavBack from '../components/btns/BtnNavBack'
 import BtnNavNext from '../components/btns/BtnNavNext'
 import TextField from '../components/textField'
-import NumField from '../components/numField'
-import { ReactComponent as Lady01 } from '../assets/images/hero/female/lady_01.svg'
+import { ReactComponent as Lady01 } from '../assets/images/hero/male/male_01.svg'
 import { useNavigate } from "react-router-dom"
 
-const Ss1_1 = () => {
+const Ss2_1 = () => {
     const navigate = useNavigate();
     const handleClickBack = () => {
         navigate("/Init1");
     }
 
     let Data = {
-        title: "Tell us a little bit more about you",
+        title: "Tell us a little bit more about your husband",
         cta1: 'New user',
         cta2: 'Returning user',
         btns: ['back', 'next'],
-        flds_lbls: ['Name', 'Age', 'Your answer'],
-        flds_holder: ['Your full names', 'Your age', 'Write your answer'],
+        flds_lbls: ['First name', 'Last name'],
+        flds_holder: ['First name', 'Last name'],
         q: "Who referred you?"
     }
 
@@ -37,7 +36,7 @@ const Ss1_1 = () => {
                 </div>
             </div>
             <div className="grd_cont">
-                <div class="ss1_1">
+                <div class="ss1_3">
                     <div class="grd_left">
                         <div className="slide_in_blurred_left">
                             <Lady01 />
@@ -50,11 +49,7 @@ const Ss1_1 = () => {
                                 <TextField flds_lbls={Data.flds_lbls[0]} flds_holder={Data.flds_holder[0]} />
                             </div>
                             <div className="flds">
-                                <NumField flds_lbls={Data.flds_lbls[1]} flds_holder={Data.flds_holder[1]} />
-                            </div>
-                            <div className="qsts">
-                                <h3>{Data.q}</h3>
-                                <TextField flds_holder={Data.flds_holder[2]} />
+                                <TextField flds_lbls={Data.flds_lbls[1]} flds_holder={Data.flds_holder[1]} />
                             </div>
                         </div>
 
@@ -77,4 +72,4 @@ const Ss1_1 = () => {
         </div>
     )
 }
-export default Ss1_1;
+export default Ss2_1;
