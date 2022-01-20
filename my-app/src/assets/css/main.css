@@ -448,7 +448,7 @@
   pointer-events: all;
 }
 
-.select_form {
+.select_op {
   float: left;
   margin-right: 12px;
   display: flex;
@@ -459,7 +459,7 @@
   cursor: pointer;
 }
 
-.select_form:focus .option {
+.select_op:focus .option {
   position: relative;
   pointer-events: all;
 }
@@ -482,6 +482,8 @@
   box-sizing: border-box;
   overflow: hidden;
   white-space: nowrap;
+  border: 1px solid #722022;
+  cursor: pointer;
 }
 .option:hover {
   background: #ECB343;
@@ -831,6 +833,54 @@
   opacity: 1;
   transform: translate3d(0, var(--labelTransformedPosY), 0) scale(var(--labelScaleFactor));
   transition: transform var(--inputTransitionDuration), visibility 0ms, z-index 0ms;
+}
+
+.quantity-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5em;
+}
+.quantity-input:focus {
+  background: red;
+}
+
+.quantity-input__modifier,
+.quantity-input__screen {
+  user-select: none;
+  outline: none;
+}
+
+.quantity-input__modifier {
+  padding: 0.7rem;
+  width: 3rem;
+  font-size: 1rem;
+  background: #722022;
+  color: #FDE8D3;
+  border: 0 solid #dbdbdb;
+  text-align: center;
+  cursor: pointer;
+}
+.quantity-input__modifier:hover {
+  background: #ECB343;
+  color: #383D47;
+}
+.quantity-input__modifier--left {
+  border-radius: 1.5em 0 0 1.5em;
+}
+.quantity-input__modifier--right {
+  border-radius: 0 1.5em 1.5em 0;
+}
+
+.quantity-input__screen {
+  width: 4rem;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  border-radius: 0.3em;
+  border: 0;
+  border-top: 0 solid #dbdbdb;
+  border-bottom: 0 solid #dbdbdb;
+  text-align: center;
 }
 
 .h_screen {
@@ -1413,7 +1463,7 @@
   height: auto;
 }
 .lyts .grd_cont .ss1_4 .grd_line2 div div div svg {
-  margin: 50px 32px 0;
+  margin: 50px 32px 20px;
   cursor: pointer;
   box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
   height: 23vw !important;
@@ -1439,6 +1489,10 @@
     clear: both;
     float: none;
   }
+}
+.lyts .grd_cont .ss1_4 .grd_line2 div div div .quantity-input {
+  margin: 21px 8px;
+  background-color: blueviolet;
 }
 .lyts .grd_cont .ss1_5 {
   display: grid;

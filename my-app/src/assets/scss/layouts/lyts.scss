@@ -659,7 +659,7 @@
                             height: auto;
 
                             svg {
-                                margin: 50px 32px 0;
+                                margin: 50px 32px 20px;
                                 cursor: pointer;
                                 box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
                                 height: 23vw !important;
@@ -683,6 +683,11 @@
                             @media screen and (max-width: 447px) {
                                 clear: both;
                                 float: none;
+                            }
+
+                            .quantity-input {
+                                margin: 21px 8px;
+                                background-color: blueviolet;
                             }
                         }
                     }

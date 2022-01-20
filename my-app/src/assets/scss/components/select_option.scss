@@ -12,7 +12,7 @@
     pointer-events: all;
 }
 
-.select_form {
+.select_op {
     float: left;
     margin-right: 12px;
     display: flex;
@@ -23,7 +23,7 @@
     cursor: pointer;
 }
 
-.select_form:focus .option {
+.select_op:focus .option {
     position: relative;
     pointer-events: all;
 }
@@ -46,6 +46,8 @@
     box-sizing: border-box;
     overflow: hidden;
     white-space: nowrap;
+    border: 1px solid #722022;
+    cursor: pointer;
 
     &:hover {
         background: $cc5;
