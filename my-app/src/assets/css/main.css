@@ -1637,7 +1637,7 @@
   z-index: 1 !important;
   width: 100%;
   height: 50%;
-  margin-top: calc(-11vw + var(--paddingCanvas));
+  margin-top: -11vw;
 }
 .lyts .grd_cont .ss1_6 .grd_right .cont .kids_l2 div:nth-child(1n) {
   z-index: 1;
@@ -1832,7 +1832,7 @@
   --fontSizeH1: 1.8vw;
   --marginTopBtmH1: 5vw;
   --paddingXxlH1:6.2vw;
-  --paddingCanvas:-10vw;
+  --paddingCanvas:-40vw;
   --fontSizeH2: 1vw;
   --marginTopBtmH2: 5vw;
   --lineHeightSm: 0.8;

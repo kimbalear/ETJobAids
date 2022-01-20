@@ -871,7 +871,8 @@
                         z-index: 1 !important;
                         width: 100%;
                         height: 50%;
-                        margin-top: calc(-11vw + var(--paddingCanvas));
+                        margin-top: -11vw;
+                        //margin-top: calc(-50vw + var(--paddingCanvas));
                         //background-color: rgb(173, 23, 140);
 
                         div {
