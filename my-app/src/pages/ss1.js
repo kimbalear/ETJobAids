@@ -14,6 +14,10 @@ const Ss1 = () => {
         navigate("/Init1");
     }
 
+    let op_lngs ={
+        lngs: ['English', 'Spanish', 'Portuguese', 'French', 'opt_lngs']
+    }
+
     let Data = {
         title: "Let's start by learning a litle bit more about you!",
         subtitle: 'Select an avatar the describes your personality',
@@ -30,7 +34,7 @@ const Ss1 = () => {
                 </div>
                 <div className="grd_right_top">
                     <div className="select_lang slide_in_blurred_right" tabindex="1">
-                        <SelectOp />
+                    <SelectOp ops={op_lngs.lngs} />
                     </div>
                 </div>
             </div>

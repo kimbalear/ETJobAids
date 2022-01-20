@@ -15,6 +15,10 @@ const Ss1_4 = () => {
         navigate("/Init1");
     }
 
+    let op_lngs ={
+        lngs: ['English', 'Spanish', 'Portuguese', 'French', 'opt_lngs']
+    }
+
     let Data = {
         title: "How many children do you have?",
         btns: ['back', 'next']
@@ -28,7 +32,7 @@ const Ss1_4 = () => {
                 </div>
                 <div className="grd_right_top">
                     <div className="select_lang slide_in_blurred_right" tabindex="1">
-                        <SelectOp />
+                        <SelectOp ops={op_lngs.lngs} />
                     </div>
                 </div>
             </div>

@@ -15,6 +15,10 @@ const Ss1_2 = () => {
         navigate("/Init1");
     }
 
+    let op_lngs ={
+        lngs: ['English', 'Spanish', 'Portuguese', 'French', 'opt_lngs']
+    }
+
     let Data = {
         title: "What about your husband?",
         cta1: 'New user',
@@ -30,7 +34,7 @@ const Ss1_2 = () => {
                 </div>
                 <div className="grd_right_top">
                     <div className="select_lang slide_in_blurred_right" tabindex="1">
-                        <SelectOp />
+                    <SelectOp ops={op_lngs.lngs} />
                     </div>
                 </div>
             </div>

@@ -5,9 +5,10 @@ import Init_2 from "./pages/init2"
 import Init_3 from "./pages/init3"
 import Ss1 from "./pages/ss1"
 import Ss1_1 from "./pages/ss1_1"
-import Ss1_2 from "./pages/Ss1_2"
-import Ss1_3 from "./pages/Ss1_3"
-import Ss1_4 from "./pages/Ss1_4"
+import Ss1_2 from "./pages/ss1_2"
+import Ss1_3 from "./pages/ss1_3"
+import Ss1_4 from "./pages/ss1_4"
+import Ss1_5 from "./pages/ss1_5"
 const name = 'John'
 const element = <p>Hello {name}</p>
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="Ss1_2" element={<Ss1_2 />} />
         <Route path="Ss1_3" element={<Ss1_3 />} />
         <Route path="Ss1_4" element={<Ss1_4 />} />
+        <Route path="Ss1_5" element={<Ss1_5 />} />
       </Routes>
     </div>
   )

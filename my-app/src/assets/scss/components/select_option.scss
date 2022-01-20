@@ -1,4 +1,4 @@
-.select_lang {
+.option_s {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -7,7 +7,7 @@
     cursor: pointer;
 }
 
-.select_lang:focus .option {
+.option_s:focus .option {
     position: relative;
     pointer-events: all;
 }

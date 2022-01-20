@@ -1,25 +1,17 @@
 import React, { Component } from "react"
-import { Link, useParams } from "react-router-dom"
 
-const SelectOp = () => {
-    let Options = {
-        Languages: ['English', 'Spanish', 'Portuguese', 'French']
-    }
-
+const SelectOp = (props) => {
     return (
-        <div>
-            <div className="select_lang slide_in_blurred_right" tabindex="1">
-                <input className="selectopt" name="test" type="radio" id="opt1" checked />
-                <label for="opt1" className="option">{Options.Languages[0]}</label>
-                <input className="selectopt" name="test" type="radio" id="opt2" />
-                <label for="opt2" className="option">{Options.Languages[1]}</label>
-                <input className="selectopt" name="test" type="radio" id="opt3" />
-                <label for="opt3" className="option">{Options.Languages[2]}</label>
-                <input className="selectopt" name="test" type="radio" id="opt4" />
-                <label for="opt4" className="option">{Options.Languages[3]}</label>
-                <input className="selectopt" name="test" type="radio" id="opt5" />
+            <div className="option_s slide_in_blurred_right" tabindex="1">
+                <input className="selectopt" name={props.ops[4]} type="radio" id={props.ops[0]+"_0"} checked />
+                <label for={props.ops[0]+"_0"} className="option">{props.ops[0]}</label>
+                <input className="selectopt" name={props.ops[4]} type="radio" id={props.ops[0]+"_1"} />
+                <label for={props.ops[0]+"_1"} className="option">{props.ops[1]}</label>
+                <input className="selectopt" name={props.ops[4]} type="radio" id={props.ops[0]+"_2"} />
+                <label for={props.ops[0]+"_2"} className="option">{props.ops[2]}</label>
+                <input className="selectopt" name={props.ops[4]} type="radio" id={props.ops[0]+"_3"} />
+                <label for={props.ops[0]+"_3"} className="option">{props.ops[3]}</label>
             </div>
-        </div>
     )
 }
 export default SelectOp;
