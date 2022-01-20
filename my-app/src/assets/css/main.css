@@ -1583,6 +1583,100 @@
     margin-bottom: 12px;
   }
 }
+.lyts .grd_cont .ss1_6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 60px;
+  grid-auto-flow: row;
+  grid-template-areas: "grd_left grd_right";
+  height: 90%;
+}
+.lyts .grd_cont .ss1_6 .grd_left {
+  grid-area: grd_left;
+}
+.lyts .grd_cont .ss1_6 .grd_left .cont {
+  width: 100%;
+  height: auto;
+  padding: calc(1rem + var(--paddingXxlH1));
+}
+.lyts .grd_cont .ss1_6 .grd_left .cont h2 {
+  margin-left: 8px;
+  text-align: left;
+}
+.lyts .grd_cont .ss1_6 .grd_right {
+  grid-area: grd_right;
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont {
+  width: 100%;
+  height: 100%;
+  padding: calc(0.1rem + var(--paddingXxlH1));
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .fathers {
+  width: 100%;
+  height: 100%;
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .fathers div {
+  z-index: -1 !important;
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .fathers div:nth-child(1n) {
+  z-index: -1;
+  width: calc(2rem + var(--paddingXxlH1));
+  float: left;
+  height: 100%;
+  color: #FDE8D3;
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .fathers div:nth-child(2n) {
+  z-index: -1;
+  width: calc(2rem + var(--paddingXxlH1));
+  color: #FDE8D3;
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .kids_l2 {
+  z-index: 1 !important;
+  width: 100%;
+  height: 50%;
+  margin-top: calc(-11vw + var(--paddingCanvas));
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .kids_l2 div:nth-child(1n) {
+  z-index: 1;
+  width: calc(0.5vw + var(--paddingXxlH1));
+  float: left;
+  height: 100%;
+  color: #FDE8D3;
+  margin-left: -40%;
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .kids_l2 div:nth-child(2n) {
+  z-index: 1;
+  width: calc(0.5vw + var(--paddingXxlH1));
+  color: #FDE8D3;
+  margin-left: -28%;
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .kids_l2 div:nth-child(3n) {
+  z-index: 1;
+  width: calc(0.5vw + var(--paddingXxlH1));
+  color: #FDE8D3;
+  margin-left: -18%;
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .kids_l2 div:nth-child(4n) {
+  z-index: 1;
+  width: calc(0.5vw + var(--paddingXxlH1));
+  color: #FDE8D3;
+  margin-left: -8%;
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .kids_l2 div:nth-child(5n) {
+  z-index: 1;
+  width: calc(0.5vw + var(--paddingXxlH1));
+  color: #FDE8D3;
+  margin-left: -8%;
+}
+.lyts .grd_cont .ss1_6 .grd_right .cont .kids_l2 div:nth-child(6n) {
+  z-index: 1;
+  width: calc(0.5vw + var(--paddingXxlH1));
+  color: #FDE8D3;
+  margin-left: -8%;
+}
 .lyts .grd_cont .ss2 {
   display: grid;
   grid-template-columns: 1fr;
@@ -1737,6 +1831,8 @@
   --fontSizeXx: 1.8rem;
   --fontSizeH1: 1.8vw;
   --marginTopBtmH1: 5vw;
+  --paddingXxlH1:6.2vw;
+  --paddingCanvas:-10vw;
   --fontSizeH2: 1vw;
   --marginTopBtmH2: 5vw;
   --lineHeightSm: 0.8;

@@ -3,28 +3,31 @@ import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/log_out'
 import BtnNavBack from '../components/btns/BtnNavBack'
 import BtnNavNext from '../components/btns/BtnNavNext'
-import TextField from '../components/textField'
-import { ReactComponent as Lady01 } from '../assets/images/hero/male/male_01.svg'
+import { ReactComponent as Lady_01 } from '../assets/images/hero/female/lady_01.svg'
+import { ReactComponent as Lady_02 } from '../assets/images/hero/female/lady_02.svg'
+import { ReactComponent as Lady_03 } from '../assets/images/hero/female/lady_03.svg'
+import { ReactComponent as Male_01 } from '../assets/images/hero/male/male_01.svg'
+import { ReactComponent as Male_02 } from '../assets/images/hero/male/male_02.svg'
+import { ReactComponent as Male_03 } from '../assets/images/hero/male/male_03.svg'
+import { ReactComponent as Kid_01 } from '../assets/images/hero/kids/kid_01.svg'
+import { ReactComponent as Kid_02 } from '../assets/images/hero/kids/kid_02.svg'
+import { ReactComponent as Kid_02my } from '../assets/images/hero/kids/kid_02my.svg'
+import { ReactComponent as Kid_04 } from '../assets/images/hero/kids/kid_04.svg'
 import { useNavigate } from "react-router-dom"
 
-const Ss1_3 = () => {
+const Ss1_6 = () => {
     const navigate = useNavigate();
     const handleClickBack = () => {
         navigate("/Init1");
     }
 
-    let op_lngs ={
+    let op_lngs = {
         lngs: ['English', 'Spanish', 'Portuguese', 'French', 'opt_lngs']
     }
 
     let Data = {
-        title: "Tell us a little bit more about your husband",
-        cta1: 'New user',
-        cta2: 'Returning user',
+        title: "What a lovely family! Let's see how you and your family can achieve your goals",
         btns: ['back', 'next'],
-        flds_lbls: ['First name', 'Last name'],
-        flds_holder: ['First name', 'Last name'],
-        q: "Who referred you?"
     }
 
     return (
@@ -40,23 +43,27 @@ const Ss1_3 = () => {
                 </div>
             </div>
             <div className="grd_cont">
-                <div class="ss1_3">
+                <div class="ss1_6">
                     <div class="grd_left">
-                        <div className="slide_in_blurred_left">
-                            <Lady01 />
+                        <div className="cont">
+                            <h1 className="slide_in_blurred_left">{Data.title}</h1>
                         </div>
                     </div>
                     <div class="grd_right">
                         <div className="cont">
-                            <h1 className="slide_in_blurred_top">{Data.title}</h1>
-                            <div className="flds">
-                                <TextField flds_lbls={Data.flds_lbls[0]} flds_holder={Data.flds_holder[0]} />
+                            <div className="fathers">
+                                <div><Lady_02/></div>
+                                <div><Male_01/></div>
                             </div>
-                            <div className="flds">
-                                <TextField flds_lbls={Data.flds_lbls[1]} flds_holder={Data.flds_holder[1]} />
+                            <div className="kids_l2">
+                                <div><Kid_01/></div>
+                                <div><Kid_01/></div>
+                                <div><Kid_02my/></div>
+                                <div><Kid_02my/></div>
+                                <div><Kid_02my/></div>
+                                <div><Kid_02/></div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -76,4 +83,4 @@ const Ss1_3 = () => {
         </div>
     )
 }
-export default Ss1_3;
+export default Ss1_6;
