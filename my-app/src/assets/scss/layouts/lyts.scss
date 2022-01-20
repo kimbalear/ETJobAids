@@ -886,6 +886,11 @@
                                 margin-left: -40%;
                                 //background-color: rgb(42, 126, 165);
 
+                                svg{
+                                    margin-top: 200px;
+                                    width: 60%;
+                                }
+
                             }
 
                             &:nth-child(2n) {
@@ -894,38 +899,58 @@
                                 color: $cc1;
                                 margin-left: -28%;
                                 //background-color: rgb(23, 173, 35);
+                                svg{
+                                    margin-top: 220px;
+                                    width: 60%;
+                                }
                             }
 
                             &:nth-child(3n) {
-                                z-index: 1;
+                                z-index: 2;
                                 width: calc(.5vw + var(--paddingXxlH1));
                                 color: $cc1;
                                 margin-left: -18%;
                                 //background-color: rgb(158, 173, 23);
+                                svg{
+                                    margin-top: 20px;
+                                    width: 100%;
+                                }
                             }
 
                             &:nth-child(4n) {
                                 z-index: 1;
                                 width: calc(.5vw + var(--paddingXxlH1));
                                 color: $cc1;
-                                margin-left: -8%;
+                                margin-left: -16%;
                                 //background-color: rgb(118, 23, 173);
+                                svg{
+                                    margin-top: 10px;
+                                    width: 210%;
+                                }
                             }
 
                             &:nth-child(5n) {
                                 z-index: 1;
                                 width: calc(.5vw + var(--paddingXxlH1));
                                 color: $cc1;
-                                margin-left: -8%;
+                                margin-left: -17%;
                                 //background-color: rgb(140, 173, 23);
+                                svg{
+                                    margin-top: 0px;
+                                    width: 310%;
+                                }
                             }
 
                             &:nth-child(6n) {
                                 z-index: 1;
                                 width: calc(.5vw + var(--paddingXxlH1));
                                 color: $cc1;
-                                margin-left: -8%;
+                                margin-left: 10%;
                                 //background-color: rgb(173, 83, 23);
+                                svg{
+                                    margin-top: 0px;
+                                    width: 110%;
+                                }
                             }
                         }
                     }
