@@ -52,17 +52,20 @@ const Ss1_6 = () => {
                     <div class="grd_right">
                         <div className="cont">
                             <div className="fathers">
-                                <div><Lady_02/></div>
+                                <div><Male_01/></div>
                                 <div><Male_01/></div>
                             </div>
-                            <div className="kids_l2">
-                                <div><Kid_01/></div>
-                                <div><Kid_01/></div>
+                            <div className="cont_kids">
+                                <div className="kids_l2">
                                 <div><Kid_02my/></div>
                                 <div><Kid_02my/></div>
                                 <div><Kid_02my/></div>
-                                <div><Kid_02/></div>
+                                <div><Kid_02my/></div>
+                                <div><Kid_02my/></div>
+                                <div><Kid_04/></div>
                             </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>

@@ -811,19 +811,20 @@
             grid-template-rows: 100%;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
-            gap: 0px 60px;
+            gap: 0px 40px;
             grid-auto-flow: row;
             grid-template-areas:
                 "grd_left grd_right";
             height: 90%;
 
             .grd_left {
+                //background-color: aquamarine;
                 grid-area: grd_left;
 
                 .cont {
                     width: 100%;
-                    height: auto;
-                    padding: calc(1rem + var(--paddingXxlH1));
+                    height: 100%;
+                    padding: calc(.5rem + var(--paddingXxlH1));
 
                     h2 {
                         margin-left: 8px;
@@ -836,124 +837,129 @@
                 grid-area: grd_right;
 
                 .cont {
-                    width: 100%;
-                    height: 100%;
-                    padding: calc(.1rem + var(--paddingXxlH1));
+                    width: auto;
+                    height: auto;
+                    float: right;
+                    margin-right: 5vw;
+                    padding: 2vw;
                     //background-color: blueviolet;
 
                     .fathers {
-                        width: 100%;
-                        height: 100%;
+                        position: relative;
+                        width: auto;
+                        height: auto;
                         //background-color: rgb(238, 164, 130);
 
                         div {
-                            z-index: -1 !important;
+                            float: right;
 
-                            &:nth-child(1n) {
-                                z-index: -1;
-                                width: calc(2rem + var(--paddingXxlH1));
-                                float: left;
-                                height: 100%;
+                            &:nth-child(1n) {//husband
+                                height: auto;
                                 color: $cc1;
-                                //background-color: rgb(238, 155, 155);
+                                margin-top: 0%;
+                                margin-left: -40px;
+                                //background-color: rgba(107, 128, 199, 0.555);
                             }
 
-                            &:nth-child(2n) {
-                                z-index: -1;
-                                width: calc(2rem + var(--paddingXxlH1));
+                            &:nth-child(2n) { //wife
+                                height: auto;
                                 color: $cc1;
-                                //background-color: rgb(127, 107, 199);
+                                margin-top: 5%;
+                                margin-left: -5%;
+                                //background-color: rgba(199, 107, 194, 0.555);
+                            }
+                        }
+                    }
+
+                    .cont_kids {
+                        position: absolute;
+                        margin-top: 25vh;
+                        margin-left: -15%;
+                        margin-left: calc(-27% + 10%);
+
+                        .kids_l2 {
+                            height: auto;
+                            //margin-left: calc(-25% + 10%);
+                            background-color: rgb(224, 134, 205);
+
+                            div {
+
+                                &:nth-child(1n) {
+                                    height: auto;
+                                    float: left;
+                                    color: $cc1;
+                                    margin-top: -1%;
+                                    margin-left: -1%;
+                                    //background-color: rgb(0, 110, 161);
+
+                                    svg {
+                                        height: 50%;
+                                    }
+
+                                }
+
+                                &:nth-child(2n) {
+                                    height: auto;
+                                    color: $cc1;
+                                    margin-top: -3%;
+                                    margin-left: -5%;
+                                    //background-color: rgb(0, 112, 9);
+
+                                    svg {
+                                        height: 45%;
+                                    }
+                                }
+
+                                &:nth-child(3n) {
+                                    height: auto;
+                                    color: $cc1;
+                                    margin-top: 3%;
+                                    margin-left: -5%;
+                                    //background-color: rgb(0, 108, 112);
+
+                                    svg {
+                                        height: 40%;
+                                    }
+                                }
+
+                                &:nth-child(4n) {
+                                    height: auto;
+                                    color: $cc1;
+                                    margin-top: -1%;
+                                    margin-left: -5%;
+                                    //background-color: rgb(0, 112, 9);
+
+                                    svg {
+                                        height: 35%;
+                                    }
+                                }
+
+                                &:nth-child(5n) {
+                                    height: auto;
+                                    color: $cc1;
+                                    margin-left: -5%;
+                                    //background-color: rgb(0, 255, 34);
+
+                                    svg {
+                                        height: 30%;
+                                    }
+                                }
+
+                                &:nth-child(6n) {
+                                    height: auto;
+                                    color: $cc1;
+                                    margin-left: -5%;
+                                    //background-color: rgb(121, 0, 81);
+
+                                    svg {
+                                        height: 25%;
+                                    }
+                                }
                             }
                         }
                     }
 
-                    .kids_l2 {
-                        z-index: 1 !important;
-                        width: 100%;
-                        height: 50%;
-                        margin-top: -11vw;
-                        //margin-top: calc(-50vw + var(--paddingCanvas));
-                        //background-color: rgb(173, 23, 140);
 
-                        div {
-
-                            &:nth-child(1n) {
-                                z-index: 1;
-                                width: calc(.5vw + var(--paddingXxlH1));
-                                float: left;
-                                height: 100%;
-                                color: $cc1;
-                                margin-left: -40%;
-                                //background-color: rgb(42, 126, 165);
-
-                                svg{
-                                    margin-top: 200px;
-                                    width: 60%;
-                                }
-
-                            }
-
-                            &:nth-child(2n) {
-                                z-index: 1;
-                                width: calc(.5vw + var(--paddingXxlH1));
-                                color: $cc1;
-                                margin-left: -28%;
-                                //background-color: rgb(23, 173, 35);
-                                svg{
-                                    margin-top: 220px;
-                                    width: 60%;
-                                }
-                            }
-
-                            &:nth-child(3n) {
-                                z-index: 2;
-                                width: calc(.5vw + var(--paddingXxlH1));
-                                color: $cc1;
-                                margin-left: -18%;
-                                //background-color: rgb(158, 173, 23);
-                                svg{
-                                    margin-top: 20px;
-                                    width: 100%;
-                                }
-                            }
-
-                            &:nth-child(4n) {
-                                z-index: 1;
-                                width: calc(.5vw + var(--paddingXxlH1));
-                                color: $cc1;
-                                margin-left: -16%;
-                                //background-color: rgb(118, 23, 173);
-                                svg{
-                                    margin-top: 10px;
-                                    width: 210%;
-                                }
-                            }
-
-                            &:nth-child(5n) {
-                                z-index: 1;
-                                width: calc(.5vw + var(--paddingXxlH1));
-                                color: $cc1;
-                                margin-left: -17%;
-                                //background-color: rgb(140, 173, 23);
-                                svg{
-                                    margin-top: 0px;
-                                    width: 310%;
-                                }
-                            }
-
-                            &:nth-child(6n) {
-                                z-index: 1;
-                                width: calc(.5vw + var(--paddingXxlH1));
-                                color: $cc1;
-                                margin-left: 10%;
-                                //background-color: rgb(173, 83, 23);
-                                svg{
-                                    margin-top: 0px;
-                                    width: 110%;
-                                }
-                            }
-                        }
-                    }
                 }
             }
 

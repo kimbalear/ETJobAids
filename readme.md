@@ -1,8 +1,8 @@
 # Creating a new app
 
 ```
-npx create-react-app my-app
-cd my-app
+npx create-react-app ETJobAidsUI
+cd ETJobAidsUI
 ```
 
 # Adding dependecies
@@ -35,6 +35,6 @@ This file defines dependencies, scripts, and other properties.
 # React Router DOM
 
 ```
-cd my-app
+cd ETJobAidsUI
 npm i react-router-dom
 ```
