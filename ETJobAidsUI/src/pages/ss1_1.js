@@ -61,7 +61,6 @@ const Ss1_1 = () => {
                                 <TextField flds_holder={Data.flds_holder[2]} />
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
